@@ -1,10 +1,10 @@
 # Import library
-import imageio.v3 as iio
+import imageio.v3 as img
 import numpy as np
 import matplotlib.pyplot as plt
 
 # Membaca gambar berwarna (RGB)
-gambar_rgb = iio.imread('tugaspc.png')
+gambar_rgb = img.imread('tugaspc.png')
 
 # Mengubah gambar menjadi grayscale
 gambar_grayscale = np.dot(gambar_rgb[...,:3], [0.2989, 0.5870, 0.1140])
